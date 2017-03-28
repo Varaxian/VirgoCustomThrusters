@@ -1,0 +1,59 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Virgo Custom Thrusters</DisplayName>
+      <Name>Tiersuperpack</Name>
+      <ItemIds>
+	    <string>LargeBlockLargeHydrogenThrustLevel1</string>
+		<string>LargeBlockSmallHydrogenThrustLevel1</string>
+		<string>LargeBlockLargeHydrogenThrustLevel2</string>
+		<string>LargeBlockSmallHydrogenThrustLevel2</string>
+        <string>LargeBlockLargeHydrogenThrustLevel3</string>
+		<string>LargeBlockSmallHydrogenThrustLevel3</string>
+        <string>LargeBlockLargeHydrogenThrustLevel4</string>
+		<string>LargeBlockSmallHydrogenThrustLevel4</string>
+	    <string>SmallBlockLargeHydrogenThrustLevel1</string>
+		<string>SmallBlockSmallHydrogenThrustLevel1</string>
+		<string>SmallBlockLargeHydrogenThrustLevel2</string>
+		<string>SmallBlockSmallHydrogenThrustLevel2</string>
+        <string>SmallBlockLargeHydrogenThrustLevel3</string>
+		<string>SmallBlockSmallHydrogenThrustLevel3</string>
+        <string>SmallBlockLargeHydrogenThrustLevel4</string>
+		<string>SmallBlockSmallHydrogenThrustLevel4</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_ShipThrusters</DisplayName>
+      <Name>ShipThrusters</Name>
+      <IsShipCategory>true</IsShipCategory>
+      <IsBlockCategory>false</IsBlockCategory>
+      <ItemIds>
+	    <string>LargeBlockLargeHydrogenThrustLevel1</string>
+		<string>LargeBlockSmallHydrogenThrustLevel1</string>
+		<string>LargeBlockLargeHydrogenThrustLevel2</string>
+		<string>LargeBlockSmallHydrogenThrustLevel2</string>
+        <string>LargeBlockLargeHydrogenThrustLevel3</string>
+		<string>LargeBlockSmallHydrogenThrustLevel3</string>
+        <string>LargeBlockLargeHydrogenThrustLevel4</string>
+		<string>LargeBlockSmallHydrogenThrustLevel4</string>
+	    <string>SmallBlockLargeHydrogenThrustLevel1</string>
+		<string>SmallBlockSmallHydrogenThrustLevel1</string>
+		<string>SmallBlockLargeHydrogenThrustLevel2</string>
+		<string>SmallBlockSmallHydrogenThrustLevel2</string>
+        <string>SmallBlockLargeHydrogenThrustLevel3</string>
+		<string>SmallBlockSmallHydrogenThrustLevel3</string>
+        <string>SmallBlockLargeHydrogenThrustLevel4</string>
+		<string>SmallBlockSmallHydrogenThrustLevel4</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>

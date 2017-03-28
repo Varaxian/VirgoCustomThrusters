@@ -1,0 +1,78 @@
+<?xml version="1.0"  encoding="utf-8"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CategoryClasses>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_LargeBlocks</DisplayName>
+      <Name>LargeBlocks</Name>
+      <ItemIds>
+        <string>Thrust/LBLAtmosT1</string>
+        <string>Thrust/LBSAtmosT1</string>
+		
+		<string>Thrust/LBLAtmosT2</string>
+        <string>Thrust/LBSAtmosT2</string>
+		
+		<string>Thrust/LBLAtmosT3</string>
+        <string>Thrust/LBSAtmosT3</string>
+		
+		<string>Thrust/LBLAtmosT4</string>
+        <string>Thrust/LBSAtmosT4</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>DisplayName_Category_SmallBlocks</DisplayName>
+      <Name>SmallBlocks</Name>
+      <ItemIds>
+        <string>Thrust/SBLAtmosT1</string>
+        <string>Thrust/SBSAtmosT1</string>
+		
+		<string>Thrust/SBLAtmosT2</string>
+        <string>Thrust/SBSAtmosT2</string>
+		
+		<string>Thrust/SBLAtmosT3</string>
+        <string>Thrust/SBSAtmosT3</string>
+		
+		<string>Thrust/SBLAtmosT4</string>
+        <string>Thrust/SBSAtmosT4</string>
+      </ItemIds>
+    </Category>
+    <Category xsi:type="MyObjectBuilder_GuiBlockCategoryDefinition">
+      <Id>
+        <TypeId>GuiBlockCategoryDefinition</TypeId>
+        <SubtypeId/>
+      </Id>
+      <DisplayName>Ntech Tiered Superpack</DisplayName>
+      <Name>Tiersuperpack</Name>
+      <IsShipCategory>false</IsShipCategory>
+      <IsBlockCategory>true</IsBlockCategory>
+      <ItemIds>
+        <string>SBSAtmosT1</string>
+        <string>SBLAtmosT1</string>
+        <string>LBSAtmosT1</string>
+        <string>LBLAtmosT1</string>
+		
+		<string>SBSAtmosT2</string>
+        <string>SBLAtmosT2</string>
+        <string>LBSAtmosT2</string>
+        <string>LBLAtmosT2</string>
+		
+		<string>SBSAtmosT3</string>
+        <string>SBLAtmosT3</string>
+        <string>LBSAtmosT3</string>
+        <string>LBLAtmosT3</string>
+		
+		<string>SBSAtmosT4</string>
+        <string>SBLAtmosT4</string>
+        <string>LBSAtmosT4</string>
+        <string>LBLAtmosT4</string>
+      </ItemIds>
+    </Category>
+  </CategoryClasses>
+</Definitions>

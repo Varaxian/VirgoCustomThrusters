@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Components>
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>AdvancedHydrogenInjector</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Hydrogen Injector</DisplayName>
+      <Icon>Textures\Icons\injector.dds</Icon>
+      <Size>
+        <X>0.04</X>
+        <Y>0.04</Y>
+        <Z>0.04</Z>
+      </Size>
+      <Mass>40</Mass>
+      <Volume>15</Volume>
+      <Model>Models\Components\thrust_components_component.mwm</Model>
+      <MaxIntegrity>40</MaxIntegrity>
+      <DropProbability>0.2</DropProbability>
+    </Component>
+    <Component>
+      <Id>
+        <TypeId>Component</TypeId>
+        <SubtypeId>ExperimentalHydrogenInjector</SubtypeId>
+      </Id>
+      <DisplayName>Experimental Hydrogen Injector</DisplayName>
+      <Icon>Textures\Icons\injector.dds</Icon>
+      <Size>
+        <X>0.04</X>
+        <Y>0.04</Y>
+        <Z>0.04</Z>
+      </Size>
+      <Mass>40</Mass>
+      <Volume>15</Volume>
+      <Model>Models\Components\thrust_components_component.mwm</Model>
+      <MaxIntegrity>60</MaxIntegrity>
+      <DropProbability>0.2</DropProbability>
+    </Component>
+	
+  </Components>
+</Definitions>

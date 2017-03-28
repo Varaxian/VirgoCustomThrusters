@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>TriniumOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Trinium</DisplayName>
+      <Icon>Textures\gui\trinium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.5" TypeId="Ore" SubtypeId="Trinium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Ingot" SubtypeId="Trinium" />
+      <BaseProductionTimeInSeconds>7</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>NeutroniumOreToIngot</SubtypeId>
+      </Id>
+      <DisplayName>Refined Neutronium</DisplayName>
+      <Icon>Textures\gui\neutronium_ingot.dds</Icon>
+      <Prerequisites>
+        <Item Amount="2.5" TypeId="Ore" SubtypeId="Neutronium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Ingot" SubtypeId="Neutronium" />
+      <BaseProductionTimeInSeconds>5</BaseProductionTimeInSeconds>
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Trinium</SubtypeId>
+      </Id>
+      <DisplayName>Trinium Plate</DisplayName>
+      <Icon>Textures\gui\trinium_component.dds</Icon>
+      <BaseProductionTimeInSeconds>18</BaseProductionTimeInSeconds>
+      <Prerequisites>
+		<Item Amount="2.5" TypeId="Ingot" SubtypeId="Iron" />
+		<Item Amount="2.5" TypeId="Ingot" SubtypeId="Nickel" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Trinium" />        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Trinium" />
+    </Blueprint>
+
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>Neutronium</SubtypeId>
+      </Id>
+      <DisplayName>Neutronium Crate</DisplayName>
+      <Icon>Textures\gui\neutronium_component.dds</Icon>
+      <BaseProductionTimeInSeconds>16</BaseProductionTimeInSeconds>
+      <Prerequisites>
+		<Item Amount="2.5" TypeId="Ingot" SubtypeId="Silicon" />
+		<Item Amount="2.5" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="2.5" TypeId="Ingot" SubtypeId="Naquadah" />
+        <Item Amount="2.5" TypeId="Ingot" SubtypeId="Neutronium" />        
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="Neutronium" />
+    </Blueprint>
+  
+	<Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ZPM</SubtypeId>
+      </Id>
+      <DisplayName>Zero point module</DisplayName>
+      <Icon>Textures\gui\ZPMComponent.dds</Icon>
+      <Prerequisites>
+        <Item Amount="1" TypeId="Ingot" SubtypeId="Iron" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ZPM" />
+      <BaseProductionTimeInSeconds>100</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+	    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AdvancedThrustComponents</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Thrust Component</DisplayName>
+      <Icon>Textures\GUI\Icons\component\adv_thrust_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="300" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="100" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="100" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="10" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="4" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="4" TypeId="Ingot" SubtypeId="Trinium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AdvancedThrustComponents" />
+      <BaseProductionTimeInSeconds>18</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ExperimentalThrustComponents</SubtypeId>
+      </Id>
+      <DisplayName>Experimental Thrust Component</DisplayName>
+      <Icon>Textures\GUI\Icons\component\exp_thrust_components_component.dds</Icon>
+      <Prerequisites>
+        <Item Amount="400" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="150" TypeId="Ingot" SubtypeId="Silver" />
+        <Item Amount="15" TypeId="Ingot" SubtypeId="Gold" />
+        <Item Amount="8" TypeId="Ingot" SubtypeId="Platinum" />
+		<Item Amount="8" TypeId="Ingot" SubtypeId="Trinium" />
+		<Item Amount="8" TypeId="Ingot" SubtypeId="Neutronium" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ExperimentalThrustComponents" />
+      <BaseProductionTimeInSeconds>22</BaseProductionTimeInSeconds>
+    </Blueprint>
+	
+  </Blueprints>
+</Definitions>

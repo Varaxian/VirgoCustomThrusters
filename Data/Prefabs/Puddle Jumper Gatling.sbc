@@ -1,0 +1,555 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Prefabs>
+    <Prefab>
+      <Id>
+        <TypeId>MyObjectBuilder_PrefabDefinition</TypeId>
+        <SubtypeId>Puddle Jumper Gatling</SubtypeId>
+      </Id>
+      <RespawnShips>true</RespawnShips>
+      <CubeGrids>
+        <CubeGrid>
+<EntityId>72229788261372249</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <PositionAndOrientation>
+            <Position x="-11.6963787" y="29.4995651" z="-41.2497253" />
+            <Forward x="0.571773" y="0.42157346" z="-0.7038121" />
+            <Up x="0.5004691" y="0.500538468" z="0.7063937" />
+          </PositionAndOrientation>
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Cockpit">
+              <SubtypeName>Puddle Jumper</SubtypeName>
+              <EntityId>72225672250196223</EntityId>
+              <Min x="-1" y="2" z="-4" />
+              <BlockOrientation Forward="Forward" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <Owner>144144723984823387</Owner>
+              <ShareMode>Faction</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <SelectedGunType>Projectile</SelectedGunType>
+              <UseSingleWeaponMode>false</UseSingleWeaponMode>
+              <Toolbar>
+                <ToolbarType>Character</ToolbarType>
+                <SelectedSlot xsi:nil="true" />
+                <Slots>
+                  <Slot>
+                    <Index>0</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemTerminalGroup">
+                      <Action>Reverse</Action>
+                      <GridEntityId>0</GridEntityId>
+                      <BlockEntityId>72225672250196223</BlockEntityId>
+                      <GroupName>Pistons</GroupName>
+                    </Data>
+                  </Slot>
+                  <Slot>
+                    <Index>1</Index>
+                    <Item />
+                    <Data xsi:type="MyObjectBuilder_ToolbarItemWeapon">
+                      <DefinitionId>
+                        <TypeId>MyObjectBuilder_SmallGatlingGun</TypeId>
+                        <SubtypeId />
+                      </DefinitionId>
+                    </Data>
+                  </Slot>
+                </Slots>
+                <ColorMaskHSVList>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>-1</Y>
+                    <Z>0</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>0</Y>
+                    <Z>0.05</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0.333333343</X>
+                    <Y>-0.48</Y>
+                    <Z>-0.25</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0.575</X>
+                    <Y>0</Y>
+                    <Z>0</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0.122222222</X>
+                    <Y>-0.1</Y>
+                    <Z>0.26</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>-0.95</Y>
+                    <Z>0.4</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>-0.96</Y>
+                    <Z>-0.5</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>-0.85</Y>
+                    <Z>0.2</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>0.15</Y>
+                    <Z>0.25</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0.333333343</X>
+                    <Y>-0.329999983</Y>
+                    <Z>-0.049999997</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0.575</X>
+                    <Y>0.15</Y>
+                    <Z>0.2</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0.122222222</X>
+                    <Y>0.0500000045</Y>
+                    <Z>0.459999979</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>-0.799999952</Y>
+                    <Z>0.6</Z>
+                  </Vector3>
+                  <Vector3>
+                    <X>0</X>
+                    <Y>-0.809999943</Y>
+                    <Z>-0.3</Z>
+                  </Vector3>
+                </ColorMaskHSVList>
+              </Toolbar>
+              <PilotRelativeWorld xsi:nil="true" />
+              <PilotGunDefinition xsi:nil="true" />
+              <IsInFirstPersonView>true</IsInFirstPersonView>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_PistonBase">
+              <SubtypeName>Puddle Piston Base</SubtypeName>
+              <EntityId>72196091935223473</EntityId>
+              <Min x="-3" y="4" z="5" />
+              <BlockOrientation Forward="Backward" Up="Left" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Velocity>0.1</Velocity>
+              <MaxLimit>1</MaxLimit>
+              <MinLimit>0</MinLimit>
+              <Reverse>false</Reverse>
+              <TopBlockId>72291596541888170</TopBlockId>
+              <CurrentPosition>1.2</CurrentPosition>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_PistonBase">
+              <SubtypeName>Puddle Piston Base</SubtypeName>
+              <EntityId>72186022043640886</EntityId>
+              <Min x="2" y="4" z="5" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Velocity>0.1</Velocity>
+              <MaxLimit>1</MaxLimit>
+              <MinLimit>0</MinLimit>
+              <Reverse>false</Reverse>
+              <TopBlockId>72259693637562614</TopBlockId>
+              <CurrentPosition>1.2</CurrentPosition>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
+              <EntityId>72265675147324779</EntityId>
+              <Min x="2" y="4" z="4" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  <MyObjectBuilder_InventoryItem>
+                    <Amount>1</Amount>
+                    <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                      <SubtypeName>Uranium</SubtypeName>
+                    </PhysicalContent>
+                    <ItemId>0</ItemId>
+                    <AmountDecimal>1</AmountDecimal>
+                  </MyObjectBuilder_InventoryItem>
+                </Items>
+                <nextItemId>1</nextItemId>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
+              <EntityId>72246141330949448</EntityId>
+              <Min x="-2" y="4" z="4" />
+              <BlockOrientation Forward="Up" Up="Left" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  <MyObjectBuilder_InventoryItem>
+                    <Amount>1</Amount>
+                    <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                      <SubtypeName>Uranium</SubtypeName>
+                    </PhysicalContent>
+                    <ItemId>0</ItemId>
+                    <AmountDecimal>1</AmountDecimal>
+                  </MyObjectBuilder_InventoryItem>
+                </Items>
+                <nextItemId>1</nextItemId>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72242243163701635</EntityId>
+              <Min x="2" y="4" z="3" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72073698128339954</EntityId>
+              <Min x="2" y="4" z="2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72292029015098233</EntityId>
+              <Min x="2" y="4" z="1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72309413468228726</EntityId>
+              <Min x="2" y="4" z="0" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72219407156751602</EntityId>
+              <Min x="2" y="4" z="-1" />
+              <BlockOrientation Forward="Right" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72311747045056379</EntityId>
+              <Min x="2" y="4" z="-2" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72295238724319572</EntityId>
+              <Min x="-2" y="4" z="3" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72174104194716574</EntityId>
+              <Min x="-2" y="4" z="2" />
+              <BlockOrientation Forward="Backward" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72097829166992330</EntityId>
+              <Min x="-2" y="4" z="1" />
+              <BlockOrientation Forward="Down" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72206164861502934</EntityId>
+              <Min x="-2" y="4" z="0" />
+              <BlockOrientation Forward="Up" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72305845529179798</EntityId>
+              <Min x="-2" y="4" z="-1" />
+              <BlockOrientation Forward="Right" Up="Down" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Thrust">
+              <SubtypeName>Puddle Jumper Thrust</SubtypeName>
+              <EntityId>72209400066918840</EntityId>
+              <Min x="-2" y="4" z="-2" />
+              <BlockOrientation Forward="Left" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>72125024417392425</EntityId>
+              <Min x="2" y="4" z="-3" />
+              <BlockOrientation Forward="Forward" Up="Right" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Gyro">
+              <SubtypeName>SmallBlockGyro</SubtypeName>
+              <EntityId>72089133528397746</EntityId>
+              <Min x="-2" y="4" z="-3" />
+              <BlockOrientation Forward="Forward" Up="Left" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
+              <EntityId>72242820970968001</EntityId>
+              <Min x="-2" y="4" z="6" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  <MyObjectBuilder_InventoryItem>
+                    <Amount>1</Amount>
+                    <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                      <SubtypeName>Uranium</SubtypeName>
+                    </PhysicalContent>
+                    <ItemId>0</ItemId>
+                    <AmountDecimal>1</AmountDecimal>
+                  </MyObjectBuilder_InventoryItem>
+                </Items>
+                <nextItemId>1</nextItemId>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_Reactor">
+              <SubtypeName>SmallBlockSmallGenerator</SubtypeName>
+              <EntityId>72250789422201122</EntityId>
+              <Min x="2" y="4" z="6" />
+              <BlockOrientation Forward="Up" Up="Backward" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  <MyObjectBuilder_InventoryItem>
+                    <Amount>1</Amount>
+                    <PhysicalContent xsi:type="MyObjectBuilder_Ingot">
+                      <SubtypeName>Uranium</SubtypeName>
+                    </PhysicalContent>
+                    <ItemId>0</ItemId>
+                    <AmountDecimal>1</AmountDecimal>
+                  </MyObjectBuilder_InventoryItem>
+                </Items>
+                <nextItemId>1</nextItemId>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <IsStatic>false</IsStatic>
+          <Skeleton />
+          <LinearVelocity x="0" y="0" z="0" />
+          <AngularVelocity x="0" y="0" z="0" />
+          <XMirroxPlane xsi:nil="true" />
+          <YMirroxPlane xsi:nil="true" />
+          <ZMirroxPlane xsi:nil="true" />
+          <ConveyorLines />
+          <BlockGroups>
+            <MyObjectBuilder_BlockGroup>
+              <Name>Pistons</Name>
+              <Blocks>
+                <Vector3I>
+                  <X>-2</X>
+                  <Y>4</Y>
+                  <Z>5</Z>
+                </Vector3I>
+                <Vector3I>
+                  <X>2</X>
+                  <Y>4</Y>
+                  <Z>5</Z>
+                </Vector3I>
+              </Blocks>
+            </MyObjectBuilder_BlockGroup>
+          </BlockGroups>
+          <Handbrake>false</Handbrake>
+          <DisplayName>Puddle Jumper Gatling</DisplayName>
+        </CubeGrid>
+        <CubeGrid>
+          <EntityId>72188120101885689</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <PositionAndOrientation>
+            <Position x="-13.8997917" y="31.5133133" z="-38.28353" />
+            <Forward x="-0.571772933" y="-0.421573579" z="0.7038121" />
+            <Up x="-0.6500818" y="0.756133139" z="-0.07520959" />
+          </PositionAndOrientation>
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_PistonTop">
+              <SubtypeName>SmallPistonTop</SubtypeName>
+              <EntityId>72291596541888170</EntityId>
+              <Min x="0" y="0" z="0" />
+              <BlockOrientation Forward="Forward" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <PistonBlockId>72196091935223473</PistonBlockId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallGatlingGun">
+              <SubtypeName>Wing L Gatling</SubtypeName>
+              <EntityId>72282721473970898</EntityId>
+              <Min x="-2" y="1" z="-2" />
+              <BlockOrientation Forward="Backward" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  
+                </Items>
+                <nextItemId>1</nextItemId>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <IsStatic>false</IsStatic>
+          <Skeleton />
+          <LinearVelocity x="0" y="0" z="0" />
+          <AngularVelocity x="0" y="0" z="0" />
+          <XMirroxPlane xsi:nil="true" />
+          <YMirroxPlane xsi:nil="true" />
+          <ZMirroxPlane xsi:nil="true" />
+          <ConveyorLines />
+          <BlockGroups />
+          <Handbrake>false</Handbrake>
+          <DisplayName>Small Ship 2163</DisplayName>
+        </CubeGrid>
+        <CubeGrid>
+          <EntityId>72140049312273978</EntityId>
+          <PersistentFlags>CastShadows InScene</PersistentFlags>
+          <PositionAndOrientation>
+            <Position x="-10.34944" y="27.3806248" z="-37.87055" />
+            <Forward x="0.571773" y="0.421573758" z="-0.703812" />
+            <Up x="0.65008235" y="-0.756132662" z="0.0752102" />
+          </PositionAndOrientation>
+          <GridSizeEnum>Small</GridSizeEnum>
+          <CubeBlocks>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_PistonTop">
+              <SubtypeName>SmallPistonTop</SubtypeName>
+              <EntityId>72259693637562614</EntityId>
+              <Min x="0" y="0" z="0" />
+              <BlockOrientation Forward="Forward" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>None</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <PistonBlockId>72186022043640886</PistonBlockId>
+            </MyObjectBuilder_CubeBlock>
+            <MyObjectBuilder_CubeBlock xsi:type="MyObjectBuilder_SmallGatlingGun">
+              <SubtypeName>Wing R Gatling</SubtypeName>
+              <EntityId>72292880294209378</EntityId>
+              <Min x="-2" y="1" z="-2" />
+              <BlockOrientation Forward="Forward" Up="Up" />
+              <ColorMaskHSV x="0" y="-1" z="0" />
+              <ShareMode>All</ShareMode>
+              <DeformationRatio>0</DeformationRatio>
+              <ShowOnHUD>false</ShowOnHUD>
+              <Enabled>true</Enabled>
+              <Inventory>
+                <Items>
+                  
+                </Items>
+                <nextItemId>1</nextItemId>
+              </Inventory>
+            </MyObjectBuilder_CubeBlock>
+          </CubeBlocks>
+          <IsStatic>false</IsStatic>
+          <Skeleton />
+          <LinearVelocity x="0" y="0" z="0" />
+          <AngularVelocity x="0" y="0" z="0" />
+          <XMirroxPlane xsi:nil="true" />
+          <YMirroxPlane xsi:nil="true" />
+          <ZMirroxPlane xsi:nil="true" />
+          <ConveyorLines />
+          <BlockGroups />
+          <Handbrake>false</Handbrake>
+          <DisplayName>Puddle Jumper Gatling</DisplayName>
+	
+	
+	
+  
+        </CubeGrid>
+      </CubeGrids>
+    </Prefab>
+  </Prefabs>
+</Definitions>

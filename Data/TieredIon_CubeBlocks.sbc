@@ -1,0 +1,1281 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CubeBlocks>
+   <!-- Begin Level 1 Thrusters -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBSTLevel1</SubtypeId>
+      </Id>
+      <DisplayName>Level 1 Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T1.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustSmall.mwm</Model>
+      <Components>
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Thrust" Count="2" />
+		<Component Subtype="Computer" Count="10" />
+		<Component Subtype="Superconductor" Count="1" />
+		<Component Subtype="MetalGrid" Count="1" />
+		<Component Subtype="Thrust" Count="2" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level1Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>SBLTLevel1</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>24000</ForceMagnitude>
+      <MaxPowerConsumption>0.4</MaxPowerConsumption>
+      <MinPowerConsumption>0.000004</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>1.25</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.001</X>
+        <Y>0.2111</Y>
+        <Z>0.6111</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0111</X>
+        <Y>0.3111</Y>
+        <Z>0.7111</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>200</FlameVisibilityDistance>
+      <FlameGlareSize>0.391</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJet</PrimarySound>
+	  <DamageEffectId>213</DamageEffectId>
+    </Definition>
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBLTLevel1</SubtypeId>
+      </Id>
+      <DisplayName>Level 1 Large Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T1.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="LargeTube" Count="5" />
+        <Component Subtype="Thrust" Count="12" />
+		<Component Subtype="Computer" Count="60" />
+		<Component Subtype="Superconductor" Count="6" />
+		<Component Subtype="MetalGrid" Count="6" />
+		<Component Subtype="Thrust" Count="3" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level1LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>56</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>288000</ForceMagnitude>
+      <MaxPowerConsumption>4.8</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.2</FlameDamage>
+      <FlameLengthScale>1.25</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.0011</X>
+        <Y>0.2111</Y>
+        <Z>0.6111</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0111</X>
+        <Y>0.3111</Y>
+        <Z>0.7111</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>300</FlameVisibilityDistance>
+      <FlameGlareSize>0.908</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+	    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBSTLevel1</SubtypeId>
+      </Id>
+      <DisplayName>Level 1 Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T1.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustSmall.mwm</Model>
+      <Components>	    
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="Thrust" Count="80" />
+		<Component Subtype="Computer" Count="150" />
+		<Component Subtype="Superconductor" Count="12" />
+		<Component Subtype="MetalGrid" Count="10" />
+		<Component Subtype="Thrust" Count="30" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="10" />	
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ThrustSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level1Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LBLTLevel1</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>50</BuildTimeSeconds>
+      <ForceMagnitude>576000</ForceMagnitude>
+      <MaxPowerConsumption>6.65</MaxPowerConsumption>
+      <MinPowerConsumption>0.000004</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.25</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.0011</X>
+        <Y>0.2111</Y>
+        <Z>0.6111</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0111</X>
+        <Y>0.3111</Y>
+        <Z>0.7111</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareSize>0.585</FlameGlareSize>
+      <FlameGlareQuerySize>2</FlameGlareQuerySize>
+      <PrimarySound>LrgShipSmJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+	 </Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBLTLevel1</SubtypeId>
+      </Id>
+      <DisplayName>Level 1 Large Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T1.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="Thrust" Count="960" />
+		<Component Subtype="Computer" Count="400" />
+		<Component Subtype="Superconductor" Count="72" />
+		<Component Subtype="MetalGrid" Count="100" />
+		<Component Subtype="Thrust" Count="140" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.49" File="Models\Cubes\Large\ThrustLargeConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\ThrustLargeConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustLargeConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level1LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>80</BuildTimeSeconds>
+      <ForceMagnitude>7200000</ForceMagnitude>
+      <MaxPowerConsumption>66</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.25</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.0011</X>
+        <Y>0.2111</Y>
+        <Z>0.6111</Z>
+		<W>0.75</W>
+	  </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.0111</X>
+        <Y>0.3111</Y>
+        <Z>0.7111</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareSize>0.779</FlameGlareSize>
+      <FlameGlareQuerySize>3</FlameGlareQuerySize>
+      <PrimarySound>LrgShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	<!-- End Level 1 Thrusters -->
+	
+	<!--Begin Level 2 Thrusters -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBSTLevel2</SubtypeId>
+      </Id>
+      <DisplayName>Level 2 Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T2.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustSmall.mwm</Model>
+      <Components>
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Thrust" Count="3" />
+		<Component Subtype="Computer" Count="20" />
+		<Component Subtype="Superconductor" Count="1" />
+		<Component Subtype="MetalGrid" Count="2" />
+		<Component Subtype="Thrust" Count="2" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="2" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level2Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>SBLTLevel2</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>48</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>48000</ForceMagnitude>
+      <MaxPowerConsumption>0.8</MaxPowerConsumption>
+      <MinPowerConsumption>0.000008</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>1.35</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1745098</X>
+        <Y>0.1090196</Y>
+        <Z>0.5505882</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.2745098</X>
+        <Y>0.2090196</Y>
+        <Z>0.6505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>200</FlameVisibilityDistance>
+      <FlameGlareSize>0.391</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+	  <DamageEffectId>213</DamageEffectId>
+      <PrimarySound>SmShipSmJet</PrimarySound>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBLTLevel2</SubtypeId>
+      </Id>
+      <DisplayName>Level 2 Large Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T2.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="LargeTube" Count="5" />
+        <Component Subtype="Thrust" Count="32" />
+		<Component Subtype="Computer" Count="80" />
+		<Component Subtype="Superconductor" Count="6" />
+		<Component Subtype="MetalGrid" Count="8" />
+		<Component Subtype="Thrust" Count="9" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="4" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level2LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>112</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>576000</ForceMagnitude>
+      <MaxPowerConsumption>9.6</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.2</FlameDamage>
+      <FlameLengthScale>1.35</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1745098</X>
+        <Y>0.1090196</Y>
+        <Z>0.5505882</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.2745098</X>
+        <Y>0.2090196</Y>
+        <Z>0.6505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>300</FlameVisibilityDistance>
+      <FlameGlareSize>0.908</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+	
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBSTLevel2</SubtypeId>
+      </Id>
+      <DisplayName>Level 2 Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T2.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustSmall.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="Thrust" Count="80" />
+		<Component Subtype="Computer" Count="175" />
+		<Component Subtype="Superconductor" Count="12" />
+		<Component Subtype="MetalGrid" Count="10" />
+		<Component Subtype="Thrust" Count="40" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="Superconductor" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ThrustSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level2Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LBLTLevel2</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>100</BuildTimeSeconds>
+      <ForceMagnitude>1152000</ForceMagnitude>
+      <MaxPowerConsumption>13.44</MaxPowerConsumption>
+      <MinPowerConsumption>0.000008</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.35</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1745098</X>
+        <Y>0.1090196</Y>
+        <Z>0.5505882</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.2745098</X>
+        <Y>0.2090196</Y>
+        <Z>0.6505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareSize>0.585</FlameGlareSize>
+      <FlameGlareQuerySize>2</FlameGlareQuerySize>
+      <PrimarySound>LrgShipSmJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBLTLevel2</SubtypeId>
+      </Id>
+      <DisplayName>Level 2 Large Thrust</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T2.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="Thrust" Count="1060" />
+		<Component Subtype="Computer" Count="600" />
+		<Component Subtype="Superconductor" Count="72" />
+		<Component Subtype="MetalGrid" Count="200" />
+		<Component Subtype="Thrust" Count="180" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.49" File="Models\Cubes\Large\ThrustLargeConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\ThrustLargeConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustLargeConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level2LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>160</BuildTimeSeconds>
+      <ForceMagnitude>14400000</ForceMagnitude>
+      <MaxPowerConsumption>134.4</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.35</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.1745098</X>
+        <Y>0.1090196</Y>
+        <Z>0.5505882</Z>
+		<W>0.75</W>
+		</FlameIdleColor>
+      <FlameFullColor>
+        <X>0.2745098</X>
+        <Y>0.2090196</Y>
+        <Z>0.6505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareSize>0.779</FlameGlareSize>
+      <FlameGlareQuerySize>3</FlameGlareQuerySize>
+      <PrimarySound>LrgShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	<!-- End Level 2 Thrusters -->
+	<!-- Begin Level 3 Thrusters -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBSTLevel3</SubtypeId>
+      </Id>
+      <DisplayName>Level 3 Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T3.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustSmall.mwm</Model>
+      <Components>
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="Thrust" Count="4" />
+		<Component Subtype="Computer" Count="30" />
+		<Component Subtype="Superconductor" Count="1" />
+		<Component Subtype="MetalGrid" Count="3" />
+		<Component Subtype="Thrust" Count="2" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="2" />
+		<Component Subtype="AdvancedThrustComponents" Count="1" />
+		
+      </Components>
+      <CriticalComponent Subtype="AdvancedThrustComponents" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level3Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>SBLTLevel3</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>96</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>96000</ForceMagnitude>
+      <MaxPowerConsumption>1.608</MaxPowerConsumption>
+      <MinPowerConsumption>0.000016</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.5745098</X>
+        <Y>0.5090196</Y>
+        <Z>0.3505882</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.6745098</X>
+        <Y>0.6090196</Y>
+        <Z>0.4505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>200</FlameVisibilityDistance>
+      <FlameGlareSize>0.391</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJet</PrimarySound>
+	  <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBLTLevel3</SubtypeId>
+      </Id>
+      <DisplayName>Level 3 Large Thrust</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T3.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="LargeTube" Count="5" />
+        <Component Subtype="Thrust" Count="24" />
+		<Component Subtype="Computer" Count="100" />
+		<Component Subtype="Superconductor" Count="6" />
+		<Component Subtype="MetalGrid" Count="10" />
+		<Component Subtype="Thrust" Count="6" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="4" />
+		<Component Subtype="AdvancedThrustComponents" Count="6" />
+		
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level3LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>224</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>1152000</ForceMagnitude>
+      <MaxPowerConsumption>19.2</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.2</FlameDamage>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.5745098</X>
+        <Y>0.5090196</Y>
+        <Z>0.3505882</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.6745098</X>
+        <Y>0.6090196</Y>
+        <Z>0.4505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>300</FlameVisibilityDistance>
+      <FlameGlareSize>0.908</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	
+	
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBSTLevel3</SubtypeId>
+      </Id>
+      <DisplayName>Level 3 Thruster</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T3.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustSmall.mwm</Model>
+      <Components>		
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="Thrust" Count="90" />
+		<Component Subtype="Computer" Count="200" />
+		<Component Subtype="Superconductor" Count="12" />
+		<Component Subtype="MetalGrid" Count="20" />
+		<Component Subtype="Thrust" Count="50" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="10" />
+		<Component Subtype="AdvancedThrustComponents" Count="12" />		
+      </Components>
+      <CriticalComponent Subtype="AdvancedThrustComponents" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ThrustSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level3Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LBLTLevel3</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>150</BuildTimeSeconds>
+      <ForceMagnitude>2304000</ForceMagnitude>
+      <MaxPowerConsumption>26.88</MaxPowerConsumption>
+      <MinPowerConsumption>0.000016</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.5745098</X>
+        <Y>0.5090196</Y>
+        <Z>0.3505882</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.6745098</X>
+        <Y>0.6090196</Y>
+        <Z>0.4505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareSize>0.585</FlameGlareSize>
+      <FlameGlareQuerySize>2</FlameGlareQuerySize>
+      <PrimarySound>LrgShipSmJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+	 </Definition>
+	 <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBLTLevel3</SubtypeId>
+      </Id>
+      <DisplayName>Level 3 Large Thrust</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T3.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="Thrust" Count="1160" />
+		<Component Subtype="Computer" Count="800" />
+		<Component Subtype="Superconductor" Count="72" />
+		<Component Subtype="MetalGrid" Count="300" />
+		<Component Subtype="Thrust" Count="220" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SteelPlate" Count="50" />
+		<Component Subtype="AdvancedThrustComponents" Count="72" />		
+      </Components>
+      <CriticalComponent Subtype="AdvancedThrustComponents" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.49" File="Models\Cubes\Large\ThrustLargeConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\ThrustLargeConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustLargeConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level3LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>320</BuildTimeSeconds>
+      <ForceMagnitude>28800000</ForceMagnitude>
+      <MaxPowerConsumption>268.8</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.5745098</X>
+        <Y>0.5090196</Y>
+        <Z>0.3505882</Z>
+		<W>0.75</W>
+	  </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.6745098</X>
+        <Y>0.6090196</Y>
+        <Z>0.4505882</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareSize>0.779</FlameGlareSize>
+      <FlameGlareQuerySize>3</FlameGlareQuerySize>
+      <PrimarySound>LrgShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	 <!-- End Level 3 Thrusters -->
+	 
+	 
+	 <!-- Begin Level 4 Thrust (Angel Fire) -->
+	   <!-- Begin Smallship Thrust -->
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBSTLevel4</SubtypeId>
+      </Id>
+      <DisplayName>Level 4 Thrust (Angel Fire)</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T4.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustSmall.mwm</Model>
+      <Components>
+        <Component Subtype="LargeTube" Count="2" />
+        <Component Subtype="AdvancedThrustComponents" Count="2" />
+		<Component Subtype="Computer" Count="40" />
+		<Component Subtype="Superconductor" Count="1" />
+		<Component Subtype="MetalGrid" Count="4" />
+        <Component Subtype="Construction" Count="2" />
+        <Component Subtype="SteelPlate" Count="2" />
+		<Component Subtype="ExperimentalThrustComponents" Count="1" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedThrustComponents" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustSmallConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level4Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>SBLTLevel4</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>24</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>192000</ForceMagnitude>
+      <MaxPowerConsumption>3.2</MaxPowerConsumption>
+      <MinPowerConsumption>0.000004</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.1</FlameDamage>
+      <FlameLengthScale>1.25</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.6</X>
+        <Y>0.6</Y>
+        <Z>0.6</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.7</X>
+        <Y>0.7</Y>
+        <Z>0.7</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>200</FlameVisibilityDistance>
+      <FlameGlareSize>0.391</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipSmJet</PrimarySound>
+	  <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>SBLTLevel4</SubtypeId>
+      </Id>
+      <DisplayName>Level 4 Large Thrust (Angel Fire)</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T4.dds</Icon>
+      <CubeSize>Small</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Small\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="1" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="LargeTube" Count="5" />
+        <Component Subtype="AdvancedThrustComponents" Count="12" />
+		<Component Subtype="Computer" Count="125" />
+		<Component Subtype="Superconductor" Count="6" />
+		<Component Subtype="MetalGrid" Count="15" />
+        <Component Subtype="Construction" Count="1" />
+        <Component Subtype="SteelPlate" Count="4" />
+		<Component Subtype="ExperimentalThrustComponents" Count="6" />
+      </Components>
+      <CriticalComponent Subtype="AdvancedThrustComponents" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.50" File="Models\Cubes\Small\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Small\ThrustLargeConstruction_2.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level4LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <BuildTimeSeconds>448</BuildTimeSeconds>
+      <EdgeType>Light</EdgeType>
+      <ForceMagnitude>2304000</ForceMagnitude>
+      <MaxPowerConsumption>38.4</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <SlowdownFactor>5</SlowdownFactor>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameDamage>0.2</FlameDamage>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.6</X>
+        <Y>0.6</Y>
+        <Z>0.6</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.7</X>
+        <Y>0.7</Y>
+        <Z>0.7</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareSsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>300</FlameVisibilityDistance>
+      <FlameGlareSize>0.908</FlameGlareSize>
+      <FlameGlareQuerySize>1</FlameGlareQuerySize>
+      <PrimarySound>SmShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	   <!-- End Smallship Thrust -->
+	   <!-- Begin Largeship Thrust -->
+    <Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBSTLevel4</SubtypeId>
+      </Id>
+      <DisplayName>Level 4 Thruster (Angel Fire)</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_T4.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="1" y="1" z="2" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustSmall.mwm</Model>
+      <Components>		
+        <Component Subtype="SteelPlate" Count="15" />
+        <Component Subtype="Construction" Count="40" />
+        <Component Subtype="LargeTube" Count="8" />
+        <Component Subtype="AdvancedThrustComponents" Count="40" />
+		<Component Subtype="Computer" Count="250" />
+		<Component Subtype="Superconductor" Count="12" />
+		<Component Subtype="MetalGrid" Count="25" />
+		<Component Subtype="ExperimentalThrustComponents" Count="20" />
+        <Component Subtype="Construction" Count="20" />
+        <Component Subtype="SteelPlate" Count="10" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="1" EndY="1" />
+        <MountPoint Side="Bottom" StartX="0" StartY="1" EndX="1" EndY="2" />
+        <MountPoint Side="Left" StartX="1" StartY="0" EndX="2" EndY="1" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="1" EndY="1" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustSmallConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\ThrustSmallConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustSmallConstruction_3.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level4Thrust</BlockPairName>
+	  <BlockVariants>
+        <BlockVariant>
+          <TypeId>Thrust</TypeId>
+          <SubtypeId>LBLTLevel4</SubtypeId>
+        </BlockVariant>
+      </BlockVariants>
+      <Center x="0" y="0" z="1" />
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>300</BuildTimeSeconds>
+      <ForceMagnitude>4608000</ForceMagnitude>
+      <MaxPowerConsumption>53.76</MaxPowerConsumption>
+      <MinPowerConsumption>0.000016</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.6</X>
+        <Y>0.6</Y>
+        <Z>0.6</Z>
+        <W>0.75</W>
+      </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.7</X>
+        <Y>0.7</Y>
+        <Z>0.7</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustSmall</FlameGlareMaterial>
+      <FlameVisibilityDistance>500</FlameVisibilityDistance>
+      <FlameGlareSize>0.585</FlameGlareSize>
+      <FlameGlareQuerySize>2</FlameGlareQuerySize>
+      <PrimarySound>LrgShipSmJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+	 </Definition>
+	<Definition xsi:type="MyObjectBuilder_ThrustDefinition">
+      <Id>
+        <TypeId>Thrust</TypeId>
+        <SubtypeId>LBLTLevel4</SubtypeId>
+      </Id>
+      <DisplayName>Level 4 Large Thrust (Angel Fire)</DisplayName>
+      <Icon>Textures\GUI\Icons\Cubes\thrust_large_T4.dds</Icon>
+      <CubeSize>Large</CubeSize>
+      <BlockTopology>TriangleMesh</BlockTopology>
+      <Size x="3" y="2" z="4" />
+      <ModelOffset x="0" y="0" z="0" />
+      <Model>Models\Cubes\Large\ThrustLarge.mwm</Model>
+      <Components>
+        <Component Subtype="SteelPlate" Count="100" />
+        <Component Subtype="Construction" Count="70" />
+        <Component Subtype="LargeTube" Count="80" />
+        <Component Subtype="AdvancedThrustComponents" Count="100" />
+		<Component Subtype="Computer" Count="900" />
+		<Component Subtype="Superconductor" Count="72" />
+		<Component Subtype="MetalGrid" Count="300" />
+		<Component Subtype="ExperimentalThrustComponents" Count="20" />
+        <Component Subtype="Construction" Count="30" />
+        <Component Subtype="SteelPlate" Count="50" />
+      </Components>
+      <CriticalComponent Subtype="MetalGrid" Index="0" />
+      <MountPoints>
+        <MountPoint Side="Top" StartX="0" StartY="0" EndX="3" EndY="2" />
+        <MountPoint Side="Bottom" StartX="0" StartY="2" EndX="3" EndY="4" />
+        <MountPoint Side="Left" StartX="2" StartY="0" EndX="4" EndY="2" />
+        <MountPoint Side="Right" StartX="0" StartY="0" EndX="2" EndY="2" />
+        <MountPoint Side="Back" StartX="0" StartY="0" EndX="3" EndY="2" />
+      </MountPoints>
+      <BuildProgressModels>
+        <Model BuildPercentUpperBound="0.16" File="Models\Cubes\Large\ThrustLargeConstruction_1.mwm" />
+        <Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\ThrustLargeConstruction_2.mwm" />
+        <Model BuildPercentUpperBound="0.49" File="Models\Cubes\Large\ThrustLargeConstruction_3.mwm" />
+        <Model BuildPercentUpperBound="0.83" File="Models\Cubes\Large\ThrustLargeConstruction_4.mwm" />
+        <Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\ThrustLargeConstruction_5.mwm" />
+      </BuildProgressModels>
+      <BlockPairName>Level4LargeThrust</BlockPairName>
+	  <GuiVisible>false</GuiVisible>
+      <Center x="1" y="0" z="2" />
+      <MirroringY>Z</MirroringY>
+      <MirroringZ>Y</MirroringZ>
+      <EdgeType>Light</EdgeType>
+      <BuildTimeSeconds>640</BuildTimeSeconds>
+      <ForceMagnitude>57600000</ForceMagnitude>
+      <MaxPowerConsumption>537.6</MaxPowerConsumption>
+      <MinPowerConsumption>0.000002</MinPowerConsumption>
+      <SlowdownFactor>5</SlowdownFactor>
+	  <ResourceSinkGroup>Thrust</ResourceSinkGroup>
+      <MinPlanetaryInfluence>0</MinPlanetaryInfluence>
+      <MaxPlanetaryInfluence>1</MaxPlanetaryInfluence>
+      <EffectivenessAtMinInfluence>1</EffectivenessAtMinInfluence>
+      <EffectivenessAtMaxInfluence>0.3</EffectivenessAtMaxInfluence>
+      <FlameDamageLengthScale>0.6</FlameDamageLengthScale>
+      <FlameLengthScale>1.45</FlameLengthScale>
+      <FlameIdleColor>
+        <X>0.6</X>
+        <Y>0.6</Y>
+        <Z>0.6</Z>
+		<W>0.75</W>
+	  </FlameIdleColor>
+      <FlameFullColor>
+        <X>0.7</X>
+        <Y>0.7</Y>
+        <Z>0.7</Z>
+        <W>0.75</W>
+      </FlameFullColor>
+      <FlamePointMaterial>EngineThrustMiddle</FlamePointMaterial>
+      <FlameLengthMaterial>EngineThrustMiddle</FlameLengthMaterial>
+      <FlameGlareMaterial>GlareLsThrustLarge</FlameGlareMaterial>
+      <FlameVisibilityDistance>700</FlameVisibilityDistance>
+      <FlameGlareSize>0.779</FlameGlareSize>
+      <FlameGlareQuerySize>3</FlameGlareQuerySize>
+      <PrimarySound>LrgShipLrgJet</PrimarySound>
+      <DamageEffectId>213</DamageEffectId>
+    </Definition>
+	 <!-- End Largeship Thrust -->
+	<!-- End Level 4 Thrust (Angel Fire) -->
+ </CubeBlocks>
+ <BlockPositions>
+ </BlockPositions>
+</Definitions>

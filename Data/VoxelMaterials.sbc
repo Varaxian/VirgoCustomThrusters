@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <VoxelMaterials>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Trinium_01</SubtypeId>
+      </Id>
+      <MinedOre>Trinium</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>true</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>0.2</DamageRatio>
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      <ColorMetalXZnY>Textures\Voxels\Trinium_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <ColorMetalXZnYFar1>Textures\Voxels\Trinium_ForAxisXZ_cm.dds</ColorMetalXZnYFar1>
+      <ColorMetalXZnYFar2>Textures\Voxels\Trinium_ForAxisXZ_cm.dds</ColorMetalXZnYFar2>
+      <ColorMetalY>Textures\Voxels\Trinium_ForAxisY_cm.dds</ColorMetalY>
+      <ColorMetalYFar1>Textures\Voxels\Trinium_ForAxisY_cm.dds</ColorMetalYFar1>
+      <ColorMetalYFar2>Textures\Voxels\Trinium_ForAxisY_cm.dds</ColorMetalYFar2>
+      <NormalGlossXZnY>Textures\Voxels\Trinium_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <NormalGlossXZnYFar1>Textures\Voxels\Trinium_ForAxisXZ_ng.dds</NormalGlossXZnYFar1>
+      <NormalGlossXZnYFar2>Textures\Voxels\Trinium_ForAxisXZ_ng.dds</NormalGlossXZnYFar2>
+      <NormalGlossY>Textures\Voxels\Trinium_ForAxisY_ng.dds</NormalGlossY>
+      <NormalGlossYFar1>Textures\Voxels\Trinium_ForAxisY_ng.dds</NormalGlossYFar1>
+      <NormalGlossYFar2>Textures\Voxels\Trinium_ForAxisY_ng.dds</NormalGlossYFar2>
+      <Scale>10</Scale>
+      <ScaleFar1>50</ScaleFar1>
+      <ScaleFar2>100</ScaleFar2>
+    </VoxelMaterial>
+    <VoxelMaterial xsi:type="MyObjectBuilder_Dx11VoxelMaterialDefinition">
+      <Id>
+        <TypeId>VoxelMaterialDefinition</TypeId>
+        <SubtypeId>Neutronium_01</SubtypeId>
+      </Id>
+      <MinedOre>Neutronium</MinedOre>
+      <MinedOreRatio>1</MinedOreRatio>
+      <CanBeHarvested>true</CanBeHarvested>
+      <IsRare>true</IsRare>
+      <IsIndestructible>false</IsIndestructible>
+      <DamageRatio>0.2</DamageRatio>
+      <SpecularPower>24</SpecularPower>
+      <SpecularShininess>0.364</SpecularShininess>
+      <ColorMetalXZnY>Textures\Voxels\Neutronium_ForAxisXZ_cm.dds</ColorMetalXZnY>
+      <ColorMetalXZnYFar1>Textures\Voxels\Neutronium_ForAxisXZ_cm.dds</ColorMetalXZnYFar1>
+      <ColorMetalXZnYFar2>Textures\Voxels\Neutronium_ForAxisXZ_cm.dds</ColorMetalXZnYFar2>
+      <ColorMetalY>Textures\Voxels\Neutronium_ForAxisY_cm.dds</ColorMetalY>
+      <ColorMetalYFar1>Textures\Voxels\Neutronium_ForAxisY_cm.dds</ColorMetalYFar1>
+      <ColorMetalYFar2>Textures\Voxels\Neutronium_ForAxisY_cm.dds</ColorMetalYFar2>
+      <NormalGlossXZnY>Textures\Voxels\Neutronium_ForAxisXZ_ng.dds</NormalGlossXZnY>
+      <NormalGlossXZnYFar1>Textures\Voxels\Neutronium_ForAxisXZ_ng.dds</NormalGlossXZnYFar1>
+      <NormalGlossXZnYFar2>Textures\Voxels\Neutronium_ForAxisXZ_ng.dds</NormalGlossXZnYFar2>
+      <NormalGlossY>Textures\Voxels\Neutronium_ForAxisY_ng.dds</NormalGlossY>
+      <NormalGlossYFar1>Textures\Voxels\Neutronium_ForAxisY_ng.dds</NormalGlossYFar1>
+      <NormalGlossYFar2>Textures\Voxels\Neutronium_ForAxisY_ng.dds</NormalGlossYFar2>
+      <Scale>10</Scale>
+      <ScaleFar1>50</ScaleFar1>
+      <ScaleFar2>100</ScaleFar2>
+    </VoxelMaterial>
+    <!-- Geneticus -->
+  </VoxelMaterials>
+</Definitions>
+

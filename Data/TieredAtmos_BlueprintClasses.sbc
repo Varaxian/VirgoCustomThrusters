@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClasses>
+  </BlueprintClasses>
+  <BlueprintClassEntries>
+  
+   <!-- Large Block -->
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBLAtmosT1" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBSAtmosT1" />
+	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBLAtmosT2" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBSAtmosT2" />
+	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBLAtmosT3" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBSAtmosT3" />
+	
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBLAtmosT4" />
+    <Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LBSAtmosT4" />
+	
+   <!-- Small Block -->
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBLAtmosT1" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBSAtmosT1" />
+	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBLAtmosT2" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBSAtmosT2" />
+	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBLAtmosT3" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBSAtmosT3" />
+	
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBLAtmosT4" />
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SBSAtmosT4" />
+	
+  </BlueprintClassEntries>
+</Definitions>

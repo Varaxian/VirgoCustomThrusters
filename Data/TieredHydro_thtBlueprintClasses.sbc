@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BlueprintClassEntries>
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockLargeHydrogenThrustLevel1" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockLargeHydrogenThrustLevel2" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockLargeHydrogenThrustLevel3" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockLargeHydrogenThrustLevel4" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockSmallHydrogenThrustLevel1" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockSmallHydrogenThrustLevel2" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockSmallHydrogenThrustLevel3" />
+	<Entry Class="SmallBlocks" BlueprintSubtypeId="Thrust/SmallBlockSmallHydrogenThrustLevel4" />
+
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockLargeHydrogenThrustLevel1" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockLargeHydrogenThrustLevel2" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockLargeHydrogenThrustLevel3" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockLargeHydrogenThrustLevel4" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockSmallHydrogenThrustLevel1" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockSmallHydrogenThrustLevel2" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockSmallHydrogenThrustLevel3" />
+	<Entry Class="LargeBlocks" BlueprintSubtypeId="Thrust/LargeBlockSmallHydrogenThrustLevel4" />
+	
+	<Entry Class="Components" BlueprintSubtypeId="AdvancedHydrogenInjector" />
+	<Entry Class="Components" BlueprintSubtypeId="ExperimentalHydrogenInjector" />
+	<Entry Class="compressassemblymods" BlueprintSubtypeId="cabAdvancedHydrogenInjector" />
+
+  </BlueprintClassEntries>
+</Definitions>
+

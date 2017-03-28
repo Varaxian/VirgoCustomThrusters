@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Blueprints>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>cabAdvancedHydrogenInjector</SubtypeId>
+      </Id>
+      <DisplayName>Large Hydrogen Injector</DisplayName>
+      <Icon>Textures\Icons\injector.dds</Icon>
+      <Prerequisites>
+        <Item Amount="360" TypeId="Ingot" SubtypeId="compressioniron" />
+        <Item Amount="150" TypeId="Ingot" SubtypeId="compressioncobalt" />
+		<Item Amount="40" TypeId="Ingot" SubtypeId="compressionsilver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AdvancedHydrogenInjector" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>AdvancedHydrogenInjector</SubtypeId>
+      </Id>
+      <DisplayName>Advanced Hydrogen Injector</DisplayName>
+      <Icon>Textures\Icons\injector.dds</Icon>
+      <Prerequisites>
+        <Item Amount="360" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="40" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="AdvancedHydrogenInjector" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>
+    <Blueprint>
+      <Id>
+        <TypeId>BlueprintDefinition</TypeId>
+        <SubtypeId>ExperimentalHydrogenInjector</SubtypeId>
+      </Id>
+      <DisplayName>Experimental Hydrogen Injector</DisplayName>
+      <Icon>Textures\Icons\injector.dds</Icon>
+      <Prerequisites>
+        <Item Amount="360" TypeId="Ingot" SubtypeId="Iron" />
+        <Item Amount="150" TypeId="Ingot" SubtypeId="Cobalt" />
+		<Item Amount="40" TypeId="Ingot" SubtypeId="Silver" />
+      </Prerequisites>
+      <Result Amount="1" TypeId="Component" SubtypeId="ExperimentalHydrogenInjector" />
+      <BaseProductionTimeInSeconds>15</BaseProductionTimeInSeconds>
+    </Blueprint>	
+  </Blueprints>
+</Definitions>

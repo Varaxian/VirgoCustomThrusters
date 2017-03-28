@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <BlueprintClassEntries>
+    <Entry Class="Ingots" BlueprintSubtypeId="TriniumOreToIngot" />
+    <Entry Class="Ingots" BlueprintSubtypeId="NeutroniumOreToIngot" />	
+    <Entry Class="PreciousMetals" BlueprintSubtypeId="TriniumOreToIngot" />
+    <Entry Class="PreciousMetals" BlueprintSubtypeId="NeutroniumOreToIngot" />
+		
+	<Entry Class="Components" BlueprintSubtypeId="AdvancedThrustComponents" />
+	<Entry Class="Components" BlueprintSubtypeId="ExperimentalThrustComponents" />	
+	
+  </BlueprintClassEntries>
+</Definitions>
+<!-- vim: set tabstop=2 expandtab shiftwidth=2 nobackup: -->
+
